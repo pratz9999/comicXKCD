@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">ComicXKCD</string>
+
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+
+    <string name="menu_search_hint">comic number or text</string>
+
+    <string name="general_error_msg">Something went wrong</string>
+    <string name="connection_error_msg">Load error, please check your connection</string>
+    <string name="snack_bar_retry">Retry</string>
+    <string name="error_no_support_application_found">No support application found</string>
+
+    <string name="home_fragment_bottom_comic_num">%d / %d</string>
+    <string name="home_fragment_comic_details">Comic Details</string>
+
+    <string name="search_fragment_invalid_search_data">Invalid search data</string>
+    <string name="search_fragment_no_search_result">No search result</string>
+    <string name="search_fragment_default_msg">Type any text or number to search for your fav comic</string>
+
+    <string name="no_fav_msg">You don\'t have any favorite comic at the moment. Go to the comic detailed view and click on heart icon to add it to your favorites. Once you add a comic, it automatically becomes available to you for offline reading. </string>
+    <string name="details_fragment_comic_details">Details:</string>
+    <string name="details_fragment_comic_title">%s (%d)</string>
+    <string name="details_fragment_menu_share">Share</string>
+    <string name="app_item_comic_more">Read More</string>
+    <string name="browser">browser</string>
+    <string name="back">back</string>
+
 </resources>
