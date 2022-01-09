@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ComicXKCD"
 include ':app'
+include ':data'

@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android{
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        minSdkVersion minSdk
+        targetSdkVersion targetSdk
+    }
+
+    buildTypes{
+        debug{
+            buildConfigField("String", "BASE_URL", "\"https://xkcd.com/\"")
+        }
+
+        staging{
+            buildConfigField("String", "BASE_URL", "\"https://xkcd.com/\"")
+        }
+
+        release{
+            buildConfigField("String", "BASE_URL", "\"https://xkcd.com/\"")
+        }
+
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+
+    //region Koin
+    implementation "io.insert-koin:koin-android:$koinVersion"
+    //endregion
+
+    //region Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$retrofitInterceptorVersion"
+    //endregion
+
+    //region Room components
+    implementation "androidx.room:room-runtime:$roomVersion"
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    //endregion
+}
