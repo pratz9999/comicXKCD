@@ -1,4 +1,4 @@
-package com.shotcut
+package com.shortcut
 
 import org.junit.Test
 
